@@ -1,0 +1,1 @@
+{"uuid":"fdf908dc-6943-4d6f-a7bf-e5d9367d193a","name":"HRM","children":["f9e56514-90c0-430d-8520-cfc5e7e86d90"],"befores":[{"name":"initBeforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1648973824838,"stop":1648973824860}],"afters":[],"links":[],"start":1648973824791,"stop":1648973851078}

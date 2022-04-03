@@ -1,0 +1,16 @@
+{
+    "firstname" : "Nguyen",
+    "lastname" : "Luong",
+    "fullname" : "Nguyen Luong",
+    "username" : "luongnguyen1995@gmail.com",
+    "password" : "DinhBangok",
+    "ContactDetail" : {
+        "editFirstName" : "Therry",
+        "editLastName" : "123 OK"
+    },
+    "product":{
+        "searchCriteria":"criteria"
+    }
+
+
+}
