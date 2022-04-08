@@ -13,9 +13,9 @@ import org.testng.annotations.Test;
 
 import commons.BasePage;
 import commons.BaseTest;
-import pageFactory.copCommerce.HomePageObject;
-import pageFactory.copCommerce.LoginPageObject;
-import pageFactory.copCommerce.RegisterPageObject;
+import pageFactory.nopCommerce.HomePageObject;
+import pageFactory.nopCommerce.LoginPageObject;
+import pageFactory.nopCommerce.RegisterPageObject;
 
 public class Level_05_Page_Factory extends BaseTest {
 	private WebDriver driver;

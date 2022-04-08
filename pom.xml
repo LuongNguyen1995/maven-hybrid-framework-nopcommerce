@@ -25,6 +25,7 @@
 		<jackson.version>2.10.0</jackson.version>
 		<webdrivermanager.version>4.4.3</webdrivermanager.version>
 		<aspectj.version>1.8.10</aspectj.version>
+		<enviroment>DEV</enviroment>
 	</properties>
 
 	<!-- Quản lí thư viện -->
@@ -138,7 +139,16 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.aeonbits.owner</groupId>
+			<artifactId>owner</artifactId>
+			<version>1.0.10</version>
+		</dependency>
+
 	</dependencies>
+
+
 
 	<!-- Compiler/ Run Test -->
 	<build>
@@ -161,19 +171,84 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
 				<configuration>
-					<!-- Run TestNG xml file -->
+<!-- 					Run TestNG xml file -->
 					<suiteXmlFiles>
-						<file>src/test/resources/runHRMTestcases.xml</file>
+						<file>src/test/resources/runLiveGuruTest.xml</file>
 					</suiteXmlFiles>
 
-					<!-- Argument -->
+<!-- 					Argument -->
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
 				</configuration>
-
 			</plugin>
 		</plugins>
 	</build>
+
+<!-- 	<profiles> -->
+<!-- 		<profile> -->
+<!-- 			<id>DEV</id> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-surefire-plugin</artifactId> -->
+<!-- 						<version>2.22.2</version> -->
+<!-- 						<configuration> -->
+<!-- 							<suiteXmlFiles> -->
+<!-- 								<suiteXmlFile>src/test/resources/runLiveGuruDEV.xml</suiteXmlFile> -->
+<!-- 							</suiteXmlFiles> -->
+<!-- 									<argLine> -->
+<!-- 										-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" -->
+<!-- 									</argLine> -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+		
+<!-- 		<profile> -->
+<!-- 			<id>TESTING</id> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-surefire-plugin</artifactId> -->
+<!-- 						<version>2.22.2</version> -->
+<!-- 						<configuration> -->
+<!-- 							<suiteXmlFiles> -->
+<!-- 								<suiteXmlFile>src/test/resources/runLiveGuruTESTING.xml</suiteXmlFile> -->
+<!-- 							</suiteXmlFiles> -->
+<!-- 									<argLine> -->
+<!-- 										-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" -->
+<!-- 									</argLine>							 -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+		
+<!-- 		<profile> -->
+<!-- 			<id>STAGING</id> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 						<artifactId>maven-surefire-plugin</artifactId> -->
+<!-- 						<version>2.22.2</version> -->
+<!-- 						<configuration> -->
+<!-- 							<suiteXmlFiles> -->
+<!-- 								<suiteXmlFile>src/test/resources/runLiveGuruSTAGING.xml</suiteXmlFile> -->
+<!-- 							</suiteXmlFiles> -->
+<!-- 									<argLine> -->
+<!-- 										-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" -->
+<!-- 									</argLine>							 -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+<!-- 		</profile> -->
+<!-- 	</profiles> -->
+
 
 </project>

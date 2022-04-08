@@ -5,6 +5,7 @@ com\data\hrm\Employee.class
 com\nopcommerce\user\Level_08_Switch_Role.class
 com\hrm\employee\Level_23_Data_Test_1_Into_Class.class
 com\nopcommerce\user\Level_15_ExtentV4.class
+com\liveguru\user\Level_24_Multiple_Enviroment.class
 com\nopcommerce\user\Level_18_Pattern_Object.class
 com\nopcommerce\user\Level_07_Switch_Page.class
 com\hrm\employee\Level_19_Live_Coding.class

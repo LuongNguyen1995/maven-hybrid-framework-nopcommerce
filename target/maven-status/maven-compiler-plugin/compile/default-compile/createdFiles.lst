@@ -23,9 +23,9 @@ pageObjects\liveGuru\LoginPageObject.class
 pageObject\liveTechpanda\user\UserHomePageObject.class
 reportConfig\VerificationFailures.class
 pageObject\jQuery\dataTable\HomePageObject.class
-pageFactory\copCommerce\LoginPageObject.class
 pageObjects\liveGuru\PageGeneratorManager.class
 pageObjects\nopCommerce\user\UserAddressPageObject.class
+enviromentConfig\Enviroment.class
 pageUIs\liveTechpanda\user\LoginPageUI.class
 pageUIs\jQuery\uploadFile\BasePageJQueryUI.class
 pageObjects\nopCommerce\user\UserMyProductReviewPageObject.class
@@ -34,6 +34,7 @@ pageUIs\liveTechpanda\admin\AdminLoginPageUI.class
 reportConfig\ExtentReport.class
 reportConfig\ReportNGListener.class
 reportConfig\MethodListener.class
+retryConfig\RetryListener.class
 pageUIs\nopCommerce\user\RewardPointPageUI.class
 reportConfig\ReportNG.class
 pageUIs\liveTechpanda\user\MyAccountPageUI.class
@@ -42,8 +43,10 @@ pageObject\liveTechpanda\admin\AdminDashboardPageObject.class
 pageUIs\hrm\EmployeeListPageUI.class
 pageObjects\nopCommerce\user\UserLoginPageObject.class
 commons\BasePage$3.class
+pageFactory\nopCommerce\HomePageObject.class
 pageObject\liveTechpanda\admin\AdminLoginPageObject.class
 pageUIs\liveTechpanda\user\RegisterPageUI.class
+pageFactory\nopCommerce\RegisterPageObject.class
 pageUIs\facebook\LoginPageUI.class
 pageObjects\hrm\AddEmployeePO.class
 pageUIs\nopCommerce\admin\AdminDashBoardPageUI.class
@@ -56,6 +59,7 @@ commons\BasePage$1.class
 pageObjects\hrm\EmployeeListPO.class
 pageObjects\nopCommerce\admin\AdminDashboardPageObject.class
 pageUIs\sauceLab\PageGeneratorManager.class
+retryConfig\RetryTestFailed.class
 pageUIs\hrm\LoginPageUI.class
 pageUIs\nopCommerce\user\MyProductReviewPageUI.class
 pageObjects\hrm\PageGenerator.class
@@ -77,7 +81,6 @@ pageUIs\nopCommerce\user\BasePageUI.class
 commons\EnviromentList.class
 pageObject\liveTechpanda\user\UserRegisterPageObject.class
 commons\BrowserList.class
-pageFactory\copCommerce\HomePageObject.class
 commons\GlobalConstants.class
 pageObjects\hrm\LoginPO.class
 pageObjects\nopCommerce\admin\AdminLoginPageObject.class
@@ -87,7 +90,7 @@ pageUIs\sauceLab\LoginPageUI.class
 commons\IPage.class
 reportConfig\TestNGAppender.class
 pageObject\facebook\PageGeneratorManager.class
-pageFactory\copCommerce\RegisterPageObject.class
+pageFactory\nopCommerce\LoginPageObject.class
 commons\BasePage.class
 pageUIs\nopCommerce\user\LoginPageUI.class
 pageObject\facebook\LoginPageObject.class

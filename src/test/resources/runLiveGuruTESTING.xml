@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce">
+<suite name="Live Guru">
 
-<!-- 	<parameter name="url" value="testing" /> -->
+<!-- 	Truyền trực tiếp qua url -->
+	<parameter name="url" value="https://demo.guru99.com/v2/" />
+<!-- 	Truyền qua eviroment name dev/testing/staging/production -->
+<!-- 	<parameter name="url" value="tesing" /> -->
+
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -18,5 +22,5 @@
 		</classes>
 	</test>
 
-	
+
 </suite> 
